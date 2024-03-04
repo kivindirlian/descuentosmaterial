@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Descuentos</title>
 </head>
 <body>
-    <h1>Descuentos</h1>
+
+       <header>
+        <h1>Descuentos</h1>
+
+        <nav>
+            <ul class="menuHorizontal">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Galery</a></li>
+                <li><a href="#">inventario</a></li>
+                <li><a href="#">Faltantes</a></li>
+                <li>
+                    <a href="#">Descuentos</a>
+                    <ul class="menuVertical">
+                        <li><a href="#des1">50-20</a></li>
+                        <li><a href="#">Ventana Proyectante vidrio entero</a></li>
+                        <li><a href="#">Cabina de baño</a></li>
+                        <li><a href="#">Puerta de baño</a></li>
+                        <li><a href="#">puerta ventana vidrio entero</a></li>
+                        <li><a href="#">puerta ventana laverinto</a></li>
+                        <li><a href="#">ventana proyectante laverinto</a></li>
+                        
+                    </li>
+                    </ul>
+            </ul>
+        </nav>
+       
+    </header>   
+    
+    <div class="des1" id="des1">
+        
+        <form>
+            <h2>50-20</h2>
+            <label for="ventana1">ancho</label>
+            <input type="number" name="ventana1" id="ventana1">
+
+            <label for="ventana1alto">Alto</label>
+            <input type="number" name="ventana1alto" id="ventana1alto">
+
+            <input type="button" value="enviar" onclick="descuento1()" class="enviar1">
+        </form>
+
+
+        <div class="descuentos">
+            <h3>horizontal: </h3><p class="horizontal"></p>
+            <h3>jamba: </h3><p class="jamba"></p>
+            <h3>tope y enganche: </h3><p class="topengan"></p>
+
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 </html>
