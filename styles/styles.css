@@ -80,7 +80,7 @@ a{
 
 /* 50/20 */
 
-.des1{
+.des{
     width: 98%;
     margin: 20px auto;
     display: flex;
@@ -94,7 +94,7 @@ a{
 
 .des1 h3, 
 .des1 p{
-    display: flex;
+    
     margin: 2px;
 }
 
@@ -103,11 +103,11 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 
-#ventana1,
-#ventana1alto{
+.ventanas{
     width: 60%;
     display: block;
     text-align: center;
@@ -115,4 +115,13 @@ a{
     border: none;
     outline: none;
     padding: 5px;
+}
+
+
+.error{
+    display: none;
+    color: red;
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
 }

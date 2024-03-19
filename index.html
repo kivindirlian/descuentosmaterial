@@ -35,15 +35,15 @@
        
     </header>   
     
-    <div class="des1" id="des1">
+    <div class="des" id="des1">
         
         <form>
             <h2>50-20</h2>
             <label for="ventana1">ancho</label>
-            <input type="number" name="ventana1" id="ventana1">
+            <input type="number" name="ventana1" id="ventana1" class="ventanas">
 
             <label for="ventana1alto">Alto</label>
-            <input type="number" name="ventana1alto" id="ventana1alto">
+            <input type="number" name="ventana1alto" id="ventana1alto" class="ventanas">
 
             <input type="button" value="enviar" onclick="descuento1()" class="enviar1">
         </form>
@@ -53,10 +53,57 @@
             <h3>horizontal: </h3><p class="horizontal"></p>
             <h3>jamba: </h3><p class="jamba"></p>
             <h3>tope y enganche: </h3><p class="topengan"></p>
-
         </div>
+        <p class="error">debes llenar todos los campos</p>
     </div>
 
+
+    <div class="des" id="des2">
+        
+        <form>
+            <h2>division de baño</h2>
+            <label for="ventana2">ancho</label>
+            <input type="number" name="ventana2" id="ventana2" class="ventanas">
+
+            <label for="ventana2alto">Alto</label>
+            <input type="number" name="ventana2alto" id="ventana2alto" class="ventanas">
+
+            <input type="button" value="enviar" onclick="descuento2()" class="enviar2">
+        </form>
+
+
+        <div class="descuentos2 descuentos">
+            <h3>pv17 ancho: </h3><p class="pvAncho2"></p>
+            <h3>pv17 alto fija: </h3><p class="pvAltoFija"></p>
+            <h3>pv17 alto corredisa: </h3><p class="pvAltoCorredisa"></p>
+            <h3>war12 alto: </h3><p class="warAlto"></p>
+        </div>
+        <p class="error error2">debes llenar todos los campos</p>
+    </div>
+
+    <div class="des" id="des3">
+        
+        <form>
+            <h2>ventana proyectante vidrio entero</h2>
+            <label for="ventana3">ancho</label>
+            <input type="number" name="ventana3" id="ventana3" class="ventanas">
+
+            <label for="ventana2alto">Alto</label>
+            <input type="number" name="ventana3alto" id="ventana3alto" class="ventanas">
+
+            <input type="button" value="enviar" onclick="descuento3()" class="enviar3">
+        </form>
+
+
+        <div class="descuentos3 descuentos">
+            <h3>war10 ancho: </h3><p class="marcoAncho"></p>
+            <h3>war10, t87 y adaptador alto: </h3><p class="marcoAlto"></p>
+            <h3>ancho fija: </h3><p class="fijaAncho"></p>
+            <h3>ancho corredisa: </h3><p class="corredizaAncho"></p>
+            <h3>alto corredisa: </h3><p class="corrediAlto"></p>
+        </div>
+        <p class="error error3">debes llenar todos los campos</p>
+    </div>
     <script src="./js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
